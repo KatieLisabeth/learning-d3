@@ -1,7 +1,12 @@
 const { defineConfig } = require("@vue/cli-service");
 
 module.exports = defineConfig({
-    publicPath: process.env.NODE_ENV === "production" ? "/learning-d3/" : "/",
-    outputDir: "docs",
+    publicPath: "/",
+    outputDir: "dist",
     transpileDependencies: [], // Set to true if you want to transpile all dependencies
+    configureWebpack: {
+        resolve: {
+            extensions: [".ts", ".tsx", ".js", ".vue", ".json"],
+        },
+    },
 });

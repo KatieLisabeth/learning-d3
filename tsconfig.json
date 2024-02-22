@@ -1,13 +1,48 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.vue"],
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "strictFunctionTypes": false,
+        "strictBindCallApply": false,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "noImplicitReturns": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "@components/*": ["src/components/*"],
+            "@views/*": ["src/views/*"],
+            "@api/*": ["src/api/*"],
+            "d3": ["node_modules/d3/dist/*"]
+            // Add more aliases as needed
+        },
+        "types": ["webpack-env"]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx",
+        "src",
+        "typings"
+, "types.d.ts"    ],
+    "exclude": ["node_modules"],
+    "types": ["types.d.ts"]
 }
