@@ -1,4 +1,4 @@
 declare type DataItem = {
-    category: string | null;
+    category: string | null | number;
     value: number | null;
 };

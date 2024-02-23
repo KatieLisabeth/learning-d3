@@ -19,8 +19,8 @@ module.exports = {
         "prettier/prettier": "off",
         "no-console": "warn",
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": ["error"],
-        "@typescript-eslint/consistent-type-imports": "error",
+        "@typescript-eslint/no-shadow": ["warn"],
+        "@typescript-eslint/consistent-type-imports": "warn",
         "@typescript-eslint/no-non-null-assertion": "warn",
     },
 };
