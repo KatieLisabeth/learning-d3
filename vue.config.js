@@ -2,7 +2,7 @@ const { defineConfig } = require("@vue/cli-service");
 
 module.exports = defineConfig({
     publicPath: "https://katielisabeth.github.io/learning-d3/",
-    outputDir: "docs",
+    outputDir: "dist",
     assetsDir: "",
     transpileDependencies: [],
     configureWebpack: {
